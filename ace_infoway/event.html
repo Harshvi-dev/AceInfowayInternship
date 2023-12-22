@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>events</title>
+    <script>
+        // document.addEventListener('onload',() =>{ alert("hii")});
+        function eventFunction() {
+            //click && doubleClick event
+            const button = document.getElementById('submit');
+            button.addEventListener('click',()=>{
+                alert("hii")
+            })
+            button.addEventListener('dblclick',()=>{
+                alert("hii i am dbclick")
+            })
+
+            //mouseOver && mouseOut
+            const myDiv = document.getElementById('demoDiv');
+            myDiv.addEventListener('mouseover',()=>{
+                myDiv.style.backgroundColor='pink';
+            })
+            myDiv.addEventListener('mouseout',()=>{
+                myDiv.style.backgroundColor='white';
+            })
+
+            
+
+        }
+    </script>
+</head>
+<body onload="eventFunction()">
+    <button id="submit">hiii</button>
+    <div id="demoDiv" style="border: solid red ; width: 100px;">mouseouver</div>
+</body>
+</html>

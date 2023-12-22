@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>learning javascript</title>
+    <script src="script.js"></script>
+    <!-- <script src="promise&settimeout.js"></script> -->
+</head>
+<body>
+    <h1>Sign In</h1>
+
+    <form>
+        <!-- Text Input -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <br>
+
+        <!-- Email Input -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <br>
+
+        <!-- Password Input -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <br>
+
+        <!-- Radio Buttons -->
+        <label>Gender:</label>
+        <input type="radio" id="gender" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="gender" name="gender" value="female" required>
+        <label for="female">Female</label>
+
+        <br>
+
+        <label>Select your interests</label>
+        
+            <label>
+                <input type="checkbox" name="interests" value="programming"> Programming
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="interests" value="design"> Design
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="interests" value="music"> Music
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="interests" value="sports"> Sports
+            </label>
+    
+            <br>
+    
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit" onclick="storeDataInCookie()" id="submit">
+        
+    </form>
+</body>
+</html>
